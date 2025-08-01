@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url(bg2.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .container {
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            box-shadow: grey;
+        }
+        
+        .right-side {
+            flex: 1;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .vertical-line {
+            width: 2px;
+            height: 80%;
+            background-color: black;
+            position: absolute;
+            margin-left: 540px;
+        }
+        
+        .content {
+            text-align: center;
+            color: white;
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: black;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-left: 600px; 
+            margin-bottom: 60px;
+        }
+
+        .link {
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-top: 800px;
+            margin-left: 600px;
+        }
+        
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            width: 300px;
+            padding: 10px;
+            margin-left: 600px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: #555;
+            border-style: solid;
+        }
+        
+        input[type="submit"] {
+            width: 200px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 600px;
+            margin-top: 50px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="right-side">
+            <div class="content">
+                <h1>Sign Up</h1>
+                <form method="post" action="">
+                
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email_id" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="password" placeholder="Password" required>
+                    </div>
+                   <label for="cars">User type:</label>
+
+<select name="user_type" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; background-color:#0168D9;border-radius:15px;color:#ffffff;padding-top:10px;padding-bottom:10px;padding-right:20px;padding-left:20px; margin-left: 535px; ;"id="cars" >
+  <option value="Candidate">Candidate</option>
+  <option value="Employeer">Employer</option>
+</select> 
+                <br>
+               
+                <br>
+                    <button type="submit" class="btn btn-primary" style="margin-left: 600px;">Submit</button>
+                </form>
+                <br>
+                <div><a href="login.html" class="link">Login here</a></div>
+                {{status}}
+            </div>
+        </div><br>
+        <div class="vertical-line"></div>
+        <div class="right-side"></div>
+        <div class="content"></div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
